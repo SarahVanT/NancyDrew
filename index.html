@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🕵️‍♀️ Nancy Drew</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            background: radial-gradient(circle at 5.6% 54.5%, rgb(92, 140, 153) 0%, rgb(159, 188, 198) 83.6%);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+        h1{
+            font-size: 50px;
+            margin: 20px;
+            font-family: 'Special Elite', cursive;
+        }
+
+        h2{
+            font-family: 'Special Elite', cursive;  
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+        p a{
+            text-decoration: none;
+            color: black;
+           
+        }
+        p a:hover{
+            text-decoration: underline;
+        }
+
+        img {
+            /* won't go outside of container class */
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: rgba(229, 229, 229, 0.936);
+            box-shadow: 7px 10px 18px 6px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            display: block;
+            margin: 20px auto;
+        }
+
+
+        footer {
+            text-align: center;
+            margin: 16px 30px;
+            color: white;
+            font-size: 18px;
+            font-family: monospace;
+
+        }
+
+        footer a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        footer a:hover{
+            text-decoration: underline;
+        }
+
+
+        .theme-button {
+            font-size: 18px;
+            border-radius: 5px;
+            color: white;
+            background: #1B3348;
+            display: block;
+            margin: 20px auto;
+            padding: 15px;
+            border: 2px solid white;
+            transition: all 500ms ease-in-out;
+            font-family: monospace;
+            cursor: pointer;
+        }
+
+        .theme-button:hover {
+            color: black;
+            background: white;
+            border: 2px solid black;
+        }
+
+        .intro-picture {
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+
+        .intro-picture:hover {
+            filter: contrast(80%);
+            /* bigger image */
+            transform: scale(1.1);
+        }
+
+        .grid {
+            margin: 20px 0;
+            display: grid;
+            /* 4 columns */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+            /* makes all photos the same size */
+            /* aspect-ratio: 1 / 1; */
+            border-radius: 8px;
+            transition: all 300ms ease-in-out;
+        }
+
+        .grid img:hover{
+            transform: scale(1.5);
+        }
+
+        .dark {
+            background: radial-gradient(circle at 10% 20%, rgb(26, 51, 72) 0%, rgb(53, 72, 61) 90.1%);
+            color: #F6F5F8;
+        }
+        .dark h1{
+            font-weight: 300;
+        }
+        .dark h2{
+            font-weight: 300;
+        }
+
+        .dark .container {
+            background: #262732;
+        }
+
+        .dark a {
+            color: plum;
+        }
+
+        .dark footer a {
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <button class="theme-button">Dark Theme 👻</button>
+    <div class="container">
+        <h1>Nancy Drew 🕵️‍♀️</h1>
+        <h2>I love reading Nancy Drew books</h2>
+        <a href="https://en.wikipedia.org/wiki/Nancy_Drew" target="_blank"><img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/192/original/Nancy_Drew.png?1674523535"
+                alt="Nancy Drew" class="intro-picture"></a>
+        <div class="grid">
+            <a href="https://en.wikipedia.org/wiki/The_Secret_of_the_Old_Clock" target="_blank"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/190/original/old_clock.jpg?1674522994"
+                alt="The Secret of the Old Clock book"></a>
+            <a href="https://en.wikipedia.org/wiki/The_Hidden_Staircase" target="_blank"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/402/original/hiden_staircase.jpg?1674657478"
+                alt="The Hidden Staircase book"></a>
+            <a href="https://en.wikipedia.org/wiki/The_Bungalow_Mystery" target="_blank"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/401/original/bungalow.jpg?1674657471"
+                alt="The Bungalow Mystery book"></a>
+            <a href="https://en.wikipedia.org/wiki/The_Mystery_at_Lilac_Inn" target="_blank"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/400/original/Lilac_inn.jpg?1674657462"
+                alt="The Mystery at Lilac Inn book"></a>
+        </div>
+        <p>Nancy Drew is a fictional amateur detective. She is depicted as a 16-year-old high school graduate. In the series, she lives in the fictional town of River Heights with her father, attorney Carson Drew, and their housekeeper, Hannah Gruen. As a child (age ten in the original versions and age three in the later version), she loses her mother.<br/><br> As a teenager, she spends her time solving mysteries; some she stumbles upon, and some begin as cases of her father's. Nancy is often assisted in solving mysteries by her two closest friends: cousins Bess Marvin and George Fayne. Nancy is also occasionally joined by her boyfriend Ned Nickerson. 📖<strong class="wikipedia"> <a href="https://en.wikipedia.org/wiki/Nancy_Drew" target="_blank">Read more on Wikipedia</a></strong>
+        </p>
+    </div>
+    <footer>Coded with ❤️ by <a href="https://www.shecodes.io/graduates/69602-sarah-vantilburg" target="_blank">Sarah
+            VanTilburg</a> </footer>
+    <script>
+        function changeTheme() {
+            // selecting body
+            let body = document.querySelector("body");
+
+            // checking if body has a class of dark
+            if (body.classList.contains("dark")) {
+                // if yes, then removes class of dark
+                body.classList.remove("dark");
+            // if body doesn't have class of dark
+            } else {
+                body.classList.add("dark");
+            }
+            // Another way of writing w/out if else statement
+            // body.classList.toggle("dark");
+        }
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+
+    </script>
+</body>
+
+</html>
